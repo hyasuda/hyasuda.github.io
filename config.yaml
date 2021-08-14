@@ -3,7 +3,10 @@ languageCode: "en-us"
 title: "Hugo-profile"
 theme: "hugo-profile"
 relativeURLs: true
+
+# Add for Github pages
 publishDir: "docs"
+canonifyurls: true
 
 googleanalytics: UA-xxxxxx-x
 disqusShortname:
