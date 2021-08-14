@@ -34,8 +34,8 @@ params:
 
   # home
   disable_home: false
-  profile_image: "/static/images/hyasuda_web.jpeg"
   # profile_image: "/static/images/hyasuda_web.jpeg"
+  profile_image: "/static/images/hyasuda_draw.jpg"
   name: "Hiromasa Yasuda"
   profession: "Profession"
   github: "https://github.com/hyasuda"
