@@ -24,7 +24,7 @@ enableEmoji: true
 params:
   version: 3
 
-  favicon: "/images/fav.png"
+  favicon: "/images/hyasuda_favicon.png"
   description: "A high performance hugo theme for personal portfolio and blog."
 
   # Navbar Menus
