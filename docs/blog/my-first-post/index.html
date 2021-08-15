@@ -196,39 +196,56 @@ if (!doNotTrack) {
         <div class="rounded shadow bg-light p-3 px-md-5 bg-light">
           <h1 class="pb-2 text-center">Hugo による web page 作成 - 動機編</h1>
           <article>
-            <p>今回、このページを立ち上げるにあたってHugoを使ってみました。
-そもそもHugoとは何でしょうか。Hugoのウェブページ上<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>にある説明は、</p>
+            <h2 id="はじめに">はじめに</h2>
+<p>昨今, ウェブページを作る方法として, 様々な方法があります.</p>
+<p>はてなブログ<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>など, 本当に簡単にできるウェブサービスを利用する方法を始め, 自作するにしても便利なツールがたくさんあります.</p>
+<p>たくさんありすぎて, どれにしようか迷うほどです.</p>
+<p>今回, いくつもの候補の中, 私がウェブページを作成する方法について決めるにあたって, 以下のようなことを念頭に置きました.</p>
+<ul>
+<li>最新の技術トレンドを学ぶことができる.</li>
+<li>簡単にブログの更新などができる.</li>
+<li>費用がかからない.</li>
+<li>それなりにカッコイイウェブページが簡単にできる.</li>
+</ul>
+<p>このようなことができるウェブページの構築方法は何かを考えたところ、Hugoにいきつきました。</p>
+<p>この連載では、Hugoのウェブページを選んだ理由から簡単に説明し、その導入方法までを数回に分けて記述していきたいと思っています。</p>
+<h2 id="hugo-とは">Hugo とは</h2>
+<p>今回, このページを立ち上げるにあたってHugoを使ってみました.
+そもそもHugoとは何でしょうか. Hugoのウェブページ上<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>にある説明は,</p>
 <blockquote>
 <p>Hugo is a fast and modern static site generator written in Go,
-and designed to make website creation fun again.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
+and designed to make website creation fun again.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
 </blockquote>
-<p>DeepL<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>で日本語訳をさせると、</p>
+<p>DeepL<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>で日本語訳をさせると,</p>
 <blockquote>
-<p>Hugoは、Goで書かれた高速でモダンな静的サイトジェネレータで、
-ウェブサイト制作を再び楽しくするために設計されています。</p>
+<p>Hugoは, Goで書かれた高速でモダンな静的サイトジェネレータで,
+ウェブサイト制作を再び楽しくするために設計されています.</p>
 </blockquote>
-<p>とあります。Go言語とは、オープンソースのプログラミング言語で、シンプルで信頼性が高く、効率的なソフトウェアを簡単に構築できることが特徴な言語です。</p>
-<p>もともとは、Googleが開発した言語で、現在は複数のwebサービスにて使われ始めている比較的最近開発された言語になります。</p>
-<p>HugoはそんなGo言語を用いたサイトジェネレーターになります。説明にあった「静的」とは、「静的型付け言語」であるGo言語を使っている特徴表しています。</p>
-<p>そもそも静的型付けとは何かというと、変数などのデータ型の宣言が必要ならば静的型付け、不要ならば動的型付け、と呼ばれます。</p>
-<p>静的型付け言語の特徴は、コンパイル時にエラーが発生するのでリリース前にデバッグができること、メモリ領域の最適化が行えること、などがあります。</p>
-<p>こういった理由のため、高速な動作を狙うためならば、静的型付け言語のほうが良いと言えるでしょう。</p>
-<p>では、なぜGo言語あるいはHugoが最近になって盛り上がっているのかというと、ウェブサービスの高速化に対する需要が大きくなっていることにあります。</p>
-<p>最近の傾向として、ウェブサービスに求められることは高速であることです。特に、中国などの非常に多い人口をマーケットの対象にする場合、膨大なアクセス数があります。
-これらの膨大なアクセス数に対処できるウェブサービスを構築するためには、<strong>高速化が必須</strong>になります。</p>
-<p>Go言語は今後のトレンドになる（もうなっているかも？）言語でもあるので、慣れるためにも作ってみようかなと思い、今回Hugoを使ってウェブページを作成してみました。</p>
-<p>それでは、次の回から実際の導入について書いていこうと思います。</p>
+<p>とあります. Go言語とは, オープンソースのプログラミング言語で, シンプルで信頼性が高く, 効率的なソフトウェアを簡単に構築できることが特徴な言語です.</p>
+<p>もともとは, Googleが開発した言語で, 現在は複数のwebサービスにて使われ始めている比較的最近開発された言語になります.</p>
+<p>HugoはそんなGo言語を用いたサイトジェネレーターになります. 説明にあった「静的」とは, 「静的型付け言語」であるGo言語を使っている特徴表しています.</p>
+<p>そもそも静的型付けとは何かというと, 変数などのデータ型の宣言が必要ならば静的型付け, 不要ならば動的型付け, と呼ばれます.</p>
+<p>静的型付け言語の特徴は, コンパイル時にエラーが発生するのでリリース前にデバッグができること, メモリ領域の最適化が行えること, などがあります.</p>
+<p>こういった理由のため, 高速な動作を狙うためならば, 静的型付け言語のほうが良いと言えるでしょう.</p>
+<p>では, なぜGo言語あるいはHugoが最近になって盛り上がっているのかというと, ウェブサービスの高速化に対する需要が大きくなっていることにあります.</p>
+<p>最近の傾向として, ウェブサービスに求められることは高速であることです. 特に, 中国などの非常に多い人口をマーケットの対象にする場合, 膨大なアクセス数があります.
+これらの膨大なアクセス数に対処できるウェブサービスを構築するためには, <strong>高速化が必須</strong>になります.</p>
+<p>Go言語は今後のトレンドになる（もうなっているかも？）言語でもあるので, 慣れるためにも作ってみようかなと思い, 今回Hugoを使ってウェブページを作成してみました.</p>
+<p>それでは, 次の回から実際の導入について書いていこうと思います.</p>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p><a href="https://gohugo.io/">https://gohugo.io/</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://hatenablog.com/">https://hatenablog.com/</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
-<p><a href="https://gohugo.io/about/what-is-hugo/">https://gohugo.io/about/what-is-hugo/</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://gohugo.io/">https://gohugo.io/</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3" role="doc-endnote">
-<p><a href="https://www.deepl.com/translator">https://www.deepl.com/translator</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://gohugo.io/about/what-is-hugo/">https://gohugo.io/about/what-is-hugo/</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p><a href="https://www.deepl.com/translator">https://www.deepl.com/translator</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
@@ -239,7 +256,12 @@ and designed to make website creation fun again.<sup id="fnref:2"><a href="#fn:2
       <div class="col-md-3 py-4">
         <div class="bg-light shadow p-4 rounded mb-2 bg-light">
           <h4>Table of content</h4>
-          <nav id="TableOfContents"></nav>
+          <nav id="TableOfContents">
+  <ul>
+    <li><a href="#はじめに">はじめに</a></li>
+    <li><a href="#hugo-とは">Hugo とは</a></li>
+  </ul>
+</nav>
         </div>
 
         <div class="bg-light shadow p-4 rounded mt-2 bg-light">
@@ -288,11 +310,11 @@ and designed to make website creation fun again.<sup id="fnref:2"><a href="#fn:2
           <div class="card h-100">
             <div class="card-head px-2 py-3">
               <h5 class="card-title font-weight-bold px-2">Hugo による web page 作成 - 動機編</h5>
-              <div class="px-2">今回、このページを立ち上げるにあたってHugoを使ってみました。 そもそもHugoとは何でしょうか。Hugoのウェブページ上1にある説明は、
- Hugo is a fast and modern static site generator written in Go, and designed to make website creation fun again.2
- DeepL3で日本語訳をさせると、
- Hugoは、Goで書かれた高速でモダンな静的サイトジェネレータで、 ウェブサイト制作を再び楽しくするために設計されています。
- とあります。Go言語とは、オープンソースのプログラミング言語 …</div>
+              <div class="px-2">はじめに 昨今, ウェブページを作る方法として, 様々な方法があります.
+はてなブログ1など, 本当に簡単にできるウェブサービスを利用する方法を始め, 自作するにしても便利なツールがたくさんあります.
+たくさんありすぎて, どれにしようか迷うほどです.
+今回, いくつもの候補の中, 私がウェブページを作成する方法について決めるにあたって, 以下のようなことを念頭に置きました.
+ 最新の技術トレンドを学ぶことができる. 簡単にブログの更新などができる. 費用がかからない. それなりにカッコイイウェブページが簡単にできる.  このようなことができるウェブページの構築方法は何かを考えたとこ …</div>
             </div>
             <div class="mt-auto card-footer">
               <span class="float-left">August 14, 2021</span>
