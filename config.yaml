@@ -67,36 +67,19 @@ params:
   disable_experience: false
   experience:
     - company: "Private Company"
-      role: "Software developer"
+      role: "Researcher"
       startdate: Feb 2021
       enddate: present
       featuredpoints:
-        - point: Lead backend developer for a product.
-        - point: Created a frontend design for a product.
-    - company: "Facebook"
-      role: "Fullstack developer"
+        - point: Researcher of Heavy Ion Treatment Accelerators
+        - point: Electrics, Particle Tracking Simulation and Laser
+    - company: "Test"
+      role: "Test"
       startdate: Mar 2020
       enddate: Dec 2020
       featuredpoints:
         - point: Lead backend developer for a product.
         - point: Created a frontend design for a product.
-    - company: "Amazon"
-      role: "Fullstack developer"
-      startdate: Feb 2019
-      enddate: Jan 2020
-      featuredpoints:
-        - point: Lead backend developer for a product.
-        - point: Created a frontend design for a product.
-  # disable_experience: false
-  # experience:
-  #   - company: "Private Company (Manufacturing)"
-  #     role: "Researcher"
-  #     startdate: Apr 2021
-  #   - company: "University of Tokyo"
-  #     role: "Research Fellowship for Young Scientists"
-  #     startdata: Apr 2018
-  #     enddata: Mar 2021
-      
 
   # Education
   disable_education: false
