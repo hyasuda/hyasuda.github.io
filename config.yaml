@@ -1,5 +1,5 @@
 baseURL: "https://hyasuda.github.io/"
-languageCode: "en-us"
+languageCode: "ja"
 title: "Hiromasa Yasuda"
 theme: "hugo-profile"
 relativeURLs: true
@@ -8,7 +8,7 @@ relativeURLs: true
 publishDir: "docs"
 canonifyurls: true
 
-googleanalytics: UA-xxxxxx-x
+googleanalytics: UA-136790295-1
 disqusShortname:
 Paginate: 3
 markup:
@@ -25,7 +25,7 @@ params:
   version: 3
 
   favicon: "/images/hyasuda_favicon.png"
-  description: "A high performance hugo theme for personal portfolio and blog."
+  description: "Hiromasa Yasuda's webpage."
 
   # Navbar Menus
   customMenus:
@@ -34,10 +34,9 @@ params:
 
   # home
   disable_home: false
-  # profile_image: "/images/hyasuda_web.jpeg"
   profile_image: "/images/hyasuda_draw_small.jpg"
   name: "Hiromasa Yasuda"
-  profession: "Profession"
+  profession: "安田　浩昌"
   github: "https://github.com/hyasuda"
   linkedin: "https://www.linkedin.com/in/hiromasa-yasuda-51655b217/"
   # twitter: "https://twitter.com/"
@@ -46,64 +45,52 @@ params:
 
   # About
   disable_about: false
-  descripe_l1_person: "Hi, I'm Profile, a passionate web developer. I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly."
-  descripe_l2_person: "This is a example template for about section. You can find my works [here](#projects)"
+  # descripe_l1_person: "Hi, I'm Profile, a passionate researcher at a private company."
+  # descripe_l2_person: "This pages show my private products."
+  # descripe_l3_person: "You can find my workd [here](#projects)."
+  descripe_l1_person: "民間企業で研究職をしています."
+  descripe_l2_person: "このページでは、プライベートな成果物を発信していく予定です."
+  descripe_l3_person: "成果物の情報は [こちら](#projects) から探すことができます."
   skills:
-    - name: CSS
-      percentage: 90
-    - name: Django
-      percentage: 85
+    - name: C++
+      percentage: 50
     - name: Hugo
-      percentage: 80
-    - name: React JS
-      percentage: 70
+      percentage: 15
+    - name: Rust
+      percentage: 15
+    - name: Electrics 
+      percentage: 50
+    - name: Accelerator
+      percentage: 60
 
   # Experience
   disable_experience: false
   experience:
-    - company: "Google"
-      role: "Software developer"
-      startdate: Feb 2021
-      enddate: present
-      featuredpoints:
-        - point: Lead backend developer for a product.
-        - point: Created a frontend design for a product.
-    - company: "Facebook"
-      role: "Fullstack developer"
-      startdate: Mar 2020
-      enddate: Dec 2020
-      featuredpoints:
-        - point: Lead backend developer for a product.
-        - point: Created a frontend design for a product.
-    - company: "Amazon"
-      role: "Fullstack developer"
-      startdate: Feb 2019
-      enddate: Jan 2020
-      featuredpoints:
-        - point: Lead backend developer for a product.
-        - point: Created a frontend design for a product.
+    - company: "Toshiba Energy Systems & Solutions"
+      rose: "Researcher"
+      startdate: Apr 2021
 
   # Education
   disable_education: false
   education:
-    - degree: "B.tech"
-      branch: "Information Technology"
-      university: "Example university"
-      startedyear: "2013"
+    - degree: "Withdraw from the doctorial course"
+      branch: "Science"
+      university: "University of Tokyo"
+      startedyear: "2018"
+      graduation: "2021"
+    - degree: "Master"
+      branch: "Science"
+      university: "University of Tokyo"
+      startedyear: "2016"
       graduation: "2018"
-    - degree: "Degree"
-      branch: "Branch"
-      university: "Example university"
-      startedyear: "year"
-      graduation: "year"
-    - degree: "Degree"
-      branch: "Branch"
-      university: "Example university"
-      startedyear: "year"
-      graduation: "year"
+    - degree: "Bachelor"
+      branch: "Science"
+      university: "Saitama University"
+      startedyear: "2012"
+      graduation: "2016"
 
   # Projects
-  disable_projects: false
+  disable_projects: true
   projects:
     - name: "Example project without details"
       img: /images/project.jpg
@@ -112,7 +99,7 @@ params:
       description: "Description of project"
 
   # Achievements
-  disable_achievements: false
+  disable_achievements: true
   achievements:
     - title: Competition winner
       description: We are developed a product which can help others.
@@ -120,7 +107,7 @@ params:
     - title: Competition winner
       description: We are developed a product which can help others.
       img: /images/achiv.jpg
-    - title: Competition winner
+    - title: Competition win ner
       description: We are developed a product which can help others.
       img: /images/achiv.jpg
     - title: Competition winner
@@ -130,12 +117,12 @@ params:
   # Contact
   disable_contact: false
   contact_content: My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
-  email: "example@mail.com"
+  email: "hyasuda.work@gmail.com"
 
   # Footer
   socialiconfooter: true
   recentposts: true
 
   # Blog
-  showdescription: false
-  tweet: true
+  showdescription: true
+  tweet: false

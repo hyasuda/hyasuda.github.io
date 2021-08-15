@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hiromasa Yasuda</title>
-    <link>https://hyasuda.github.io/</link>
-    <description>Recent content on Hiromasa Yasuda</description>
+    <title>Blogs on Hiromasa Yasuda</title>
+    <link>https://hyasuda.github.io/blog/</link>
+    <description>Recent content in Blogs on Hiromasa Yasuda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 14 Aug 2021 20:38:39 +0900</lastBuildDate><atom:link href="https://hyasuda.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Aug 2021 20:38:39 +0900</lastBuildDate><atom:link href="https://hyasuda.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo による web page 作成 - 動機編</title>
       <link>https://hyasuda.github.io/blog/my-first-post/</link>
