@@ -67,19 +67,20 @@ params:
   disable_experience: false
   experience:
     - company: "Private Company"
+      id: "private-company"
       role: "Researcher"
       startdate: Feb 2021
       enddate: present
       featuredpoints:
-        - point: Researcher of Heavy Ion Treatment Accelerators
-        - point: Electrics, Particle Tracking Simulation and Laser
-    - company: "Test"
-      role: "Test"
-      startdate: Mar 2020
-      enddate: Dec 2020
+        - point: the Heavy Ion Treatment Accelerators
+        - point: Electrics, Beam Simulation and Laser
+    - company: "JSPS"
+      id: "JSPS"
+      role: "Research Fellowship for Young Scientists"
+      startdate: Apr 2018
+      enddate: Mar 2021
       featuredpoints:
-        - point: Lead backend developer for a product.
-        - point: Created a frontend design for a product.
+        - point: Belong the University of Tokyo
 
   # Education
   disable_education: false
